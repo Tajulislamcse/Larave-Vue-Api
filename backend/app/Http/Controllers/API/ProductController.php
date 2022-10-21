@@ -11,6 +11,7 @@ class ProductController extends Controller
     private $productRepository ;
     public function __construct()
     {
+     // $this->middleware('auth:api');
       $this->productRepository = resolve('App\Repositories\ProductRepository');
     }
     /**
